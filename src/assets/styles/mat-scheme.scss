@@ -1,0 +1,62 @@
+@use '@angular/material' as mat;
+@use './theme-colors.scss' as blue-theme;
+
+.light {
+  .primary-btn {
+    @include mat.button-color(blue-theme.$light-theme, $color-variant: primary);
+    @include mat.icon-button-color(blue-theme.$light-theme, $color-variant: primary);
+  }
+  .secondary-btn {
+    @include mat.button-color(blue-theme.$light-theme, $color-variant: secondary);
+    @include mat.icon-button-color(blue-theme.$light-theme, $color-variant: secondary);
+  }
+  .tertiary-btn {
+    @include mat.button-color(blue-theme.$light-theme, $color-variant: tertiary);
+    @include mat.icon-button-color(blue-theme.$light-theme, $color-variant: tertiary);
+  }
+  .error-btn {
+    @include mat.button-color(blue-theme.$light-theme, $color-variant: error);
+    @include mat.icon-button-color(blue-theme.$light-theme, $color-variant: error);
+  }
+
+  .error-checkbox {
+    @include mat.checkbox-color(blue-theme.$light-theme, $color-variant: error);
+  }
+}
+
+.dark {
+  .primary-btn {
+    @include mat.button-color(blue-theme.$dark-theme, $color-variant: primary);
+    @include mat.icon-button-color(blue-theme.$dark-theme, $color-variant: primary);
+  }
+  .secondary-btn {
+    @include mat.button-color(blue-theme.$dark-theme, $color-variant: secondary);
+    @include mat.icon-button-color(blue-theme.$dark-theme, $color-variant: secondary);
+  }
+  .tertiary-btn {
+    @include mat.button-color(blue-theme.$dark-theme, $color-variant: tertiary);
+    @include mat.icon-button-color(blue-theme.$dark-theme, $color-variant: tertiary);
+  }
+  .error-btn {
+    @include mat.button-color(blue-theme.$dark-theme, $color-variant: error);
+    @include mat.icon-button-color(blue-theme.$dark-theme, $color-variant: error);
+  }
+
+  .error-checkbox {
+    @include mat.checkbox-color(blue-theme.$dark-theme, $color-variant: error);
+  }
+}
+
+
+.error-btn-toggle {
+  @include mat.button-toggle-overrides((
+    text-color: var(--mat-sys-error),
+    state-layer-color: var(--mat-sys-error),
+    selected-state-background-color: var(--mat-sys-error-container),
+    selected-state-text-color: var(--mat-sys-on-error-container),
+    disabled-state-text-color: var(--mat-sys-outline),
+    disabled-selected-state-text-color: var(-mat-sys-outline),
+    disabled-selected-state-background-color: var(--mat-sys-outline),
+    divider-color: var(--mat-sys-error),
+  ));
+}
