@@ -4,12 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule, MatButtonModule, MatButtonToggleModule, MatCheckboxModule, MatTooltipModule, MatIconModule],
+  imports: [
+    RouterOutlet, 
+    FormsModule, 
+    MatButtonModule, MatButtonToggleModule, 
+    MatCheckboxModule, MatSlideToggleModule, 
+    MatTooltipModule, MatIconModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

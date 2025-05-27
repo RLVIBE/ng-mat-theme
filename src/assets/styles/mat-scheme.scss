@@ -2,7 +2,7 @@
 @use './theme-colors.scss' as blue-theme;
 
 .light {
-  .primary-btn {
+  .primary-btn { // no need to define primary classes - they are already defined in the theme as default
     @include mat.button-color(blue-theme.$light-theme, $color-variant: primary);
     @include mat.icon-button-color(blue-theme.$light-theme, $color-variant: primary);
   }
@@ -19,13 +19,23 @@
     @include mat.icon-button-color(blue-theme.$light-theme, $color-variant: error);
   }
 
+  .secondary-slide {
+    @include mat.slide-toggle-color(blue-theme.$light-theme, $color-variant: secondary);
+  }
+  .tertiary-slide {
+    @include mat.slide-toggle-color(blue-theme.$light-theme, $color-variant: tertiary);
+  }
+  .error-slide {
+    @include mat.slide-toggle-color(blue-theme.$light-theme, $color-variant: error);
+  }
+
   .error-checkbox {
     @include mat.checkbox-color(blue-theme.$light-theme, $color-variant: error);
   }
 }
 
 .dark {
-  .primary-btn {
+  .primary-btn { // no need to define primary classes - they are already defined in the theme as default
     @include mat.button-color(blue-theme.$dark-theme, $color-variant: primary);
     @include mat.icon-button-color(blue-theme.$dark-theme, $color-variant: primary);
   }
@@ -40,6 +50,16 @@
   .error-btn {
     @include mat.button-color(blue-theme.$dark-theme, $color-variant: error);
     @include mat.icon-button-color(blue-theme.$dark-theme, $color-variant: error);
+  }
+
+  .secondary-slide {
+    @include mat.slide-toggle-color(blue-theme.$dark-theme, $color-variant: secondary);
+  }
+  .tertiary-slide {
+    @include mat.slide-toggle-color(blue-theme.$dark-theme, $color-variant: tertiary);
+  }
+  .error-slide {
+    @include mat.slide-toggle-color(blue-theme.$dark-theme, $color-variant: error);
   }
 
   .error-checkbox {

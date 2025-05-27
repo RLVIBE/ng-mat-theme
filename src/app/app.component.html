@@ -65,6 +65,13 @@
           <mat-button-toggle value="blue">Blue</mat-button-toggle>
         </mat-button-toggle-group>
 
+        <div class="flex gap-3">
+          <mat-slide-toggle [checked]="true" matTooltip="primary"></mat-slide-toggle>
+          <mat-slide-toggle [checked]="true" matTooltip="secondary" class="secondary-slide"></mat-slide-toggle>
+          <mat-slide-toggle [checked]="true" matTooltip="tertiary" class="tertiary-slide"></mat-slide-toggle>
+          <mat-slide-toggle [checked]="true" matTooltip="error" class="error-slide"></mat-slide-toggle>
+        </div>
+
         <section>
           <mat-checkbox
             class="error-checkbox"
