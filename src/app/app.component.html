@@ -72,6 +72,38 @@
           <mat-slide-toggle [checked]="true" matTooltip="error" class="error-slide"></mat-slide-toggle>
         </div>
 
+        <div class="flex gap-4">
+          <button mat-icon-button [matMenuTriggerFor]="vertMenu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #vertMenu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>dialpad</mat-icon> <span>Redial</span>
+            </button>
+            <button mat-menu-item disabled>
+              <mat-icon>voicemail</mat-icon> <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>notifications_off</mat-icon> <span>Disable alerts</span>
+            </button>
+          </mat-menu>
+  
+          <button mat-icon-button [matMenuTriggerFor]="horizMenu" class="button-md">
+            <mat-icon>more_horiz</mat-icon>
+          </button>
+          <mat-menu #horizMenu="matMenu" class="menu-md">
+            <button mat-menu-item>
+              <mat-icon>dialpad</mat-icon> <span>Redial</span>
+            </button>
+            <button mat-menu-item disabled>
+              <mat-icon>voicemail</mat-icon> <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>notifications_off</mat-icon> <span>Disable alerts</span>
+            </button>
+          </mat-menu>
+        </div>
+
         <section>
           <mat-checkbox
             class="error-checkbox"
@@ -119,7 +151,11 @@
           <button mat-raised-button class="secondary-btn">Raised Secondary</button>
           <button mat-stroked-button class="tertiary-btn">Stroked Tertiary</button>
           <button mat-flat-button class="error-btn">Flat Error</button>
+          <button mat-flat-button class="error-btn button-md">Flat Error Medium</button>
           <button mat-fab extended class="tertiary-btn">
+            <mat-icon>favorite</mat-icon> Fab Tertiary
+          </button>
+          <button mat-fab extended class="secondary-btn button-md">
             <mat-icon>favorite</mat-icon> Fab Tertiary
           </button>
         </div>

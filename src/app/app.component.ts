@@ -5,16 +5,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
   imports: [
-    RouterOutlet, 
-    FormsModule, 
-    MatButtonModule, MatButtonToggleModule, 
-    MatCheckboxModule, MatSlideToggleModule, 
+    RouterOutlet,
+    FormsModule,
+    MatButtonModule, MatButtonToggleModule,
+    MatCheckboxModule, MatSlideToggleModule,
+    MatMenuModule,
     MatTooltipModule, MatIconModule
   ],
   templateUrl: './app.component.html',
