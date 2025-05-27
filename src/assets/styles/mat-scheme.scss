@@ -29,6 +29,16 @@
     @include mat.slide-toggle-color(blue-theme.$light-theme, $color-variant: error);
   }
 
+  .secondary-spinner {
+    @include mat.progress-spinner-color(blue-theme.$light-theme, $color-variant: secondary);
+  }
+  .tertiary-spinner {
+    @include mat.progress-spinner-color(blue-theme.$light-theme, $color-variant: tertiary);
+  }
+  .error-spinner {
+    @include mat.progress-spinner-color(blue-theme.$light-theme, $color-variant: error);
+  }
+
   .error-checkbox {
     @include mat.checkbox-color(blue-theme.$light-theme, $color-variant: error);
   }
@@ -60,6 +70,16 @@
   }
   .error-slide {
     @include mat.slide-toggle-color(blue-theme.$dark-theme, $color-variant: error);
+  }
+
+  .secondary-spinner {
+    @include mat.progress-spinner-color(blue-theme.$dark-theme, $color-variant: secondary);
+  }
+  .tertiary-spinner {
+    @include mat.progress-spinner-color(blue-theme.$dark-theme, $color-variant: tertiary);
+  }
+  .error-spinner {
+    @include mat.progress-spinner-color(blue-theme.$dark-theme, $color-variant: error);
   }
 
   .error-checkbox {

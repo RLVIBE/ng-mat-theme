@@ -6,6 +6,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -16,7 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
     FormsModule,
     MatButtonModule, MatButtonToggleModule,
     MatCheckboxModule, MatSlideToggleModule,
-    MatMenuModule,
+    MatMenuModule, MatProgressSpinnerModule,
     MatTooltipModule, MatIconModule
   ],
   templateUrl: './app.component.html',

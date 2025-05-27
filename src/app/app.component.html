@@ -68,11 +68,16 @@
         <div class="flex gap-3">
           <mat-slide-toggle [checked]="true" matTooltip="primary"></mat-slide-toggle>
           <mat-slide-toggle [checked]="true" matTooltip="secondary" class="secondary-slide"></mat-slide-toggle>
-          <mat-slide-toggle [checked]="true" matTooltip="tertiary" class="tertiary-slide"></mat-slide-toggle>
-          <mat-slide-toggle [checked]="true" matTooltip="error" class="error-slide"></mat-slide-toggle>
+          <mat-slide-toggle [checked]="true" matTooltip="tertiary" class="tertiary-slide checkbox-md"></mat-slide-toggle>
+          <mat-slide-toggle [checked]="true" matTooltip="error" class="error-slide checkbox-md"></mat-slide-toggle>
         </div>
 
-        <div class="flex gap-4">
+        <div class="flex items-center gap-2">
+          <mat-spinner diameter="48"></mat-spinner>
+          <mat-spinner diameter="40" class="secondary-spinner"></mat-spinner>
+          <mat-spinner diameter="36" class="tertiary-spinner"></mat-spinner>
+          <mat-spinner diameter="32" class="error-spinner"></mat-spinner>
+
           <button mat-icon-button [matMenuTriggerFor]="vertMenu">
             <mat-icon>more_vert</mat-icon>
           </button>
